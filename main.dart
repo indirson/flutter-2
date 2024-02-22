@@ -18,15 +18,14 @@ class MyApp extends StatelessWidget {
           BottomNavigationBarItem(icon: Icon(Icons.person),label: "settings")
         ]),
         appBar: AppBar(
-          title: const Text("azerty"),
+          title: const Text("home"),
           centerTitle: true,
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.search),
               onPressed: () {},
             )
-          ],
-          backgroundColor: const Color.fromARGB(255, 13, 128, 221),
+          ]
           leading: IconButton(
             icon: Icon(Icons.menu),
             onPressed: () {},
@@ -41,11 +40,8 @@ class MyApp extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const Padding(padding: EdgeInsets.all(10)),
-            Image(
-              image: NetworkImage(
-
-                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Lf3f97-QNvdElC2sKBlFM2s07m76v6I0IVC32VmY51Sao5P3fxzkxHss4UzQiFf1JrE&usqp=CAU'),height: 200,
-            ),
+         
+             
             Padding(padding: EdgeInsets.all(15)),
             IconButton(onPressed: (){}, icon: Icon(Icons.star)),
             MaterialButton(onPressed: (){},child: Text('click'),),
